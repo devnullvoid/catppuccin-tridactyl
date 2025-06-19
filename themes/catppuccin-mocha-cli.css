@@ -165,4 +165,125 @@
     --tridactyl-container-color-purple: var(--mauve);
 
     --tridactyl-externaledit-bg: var(--tridactyl-logo) no-repeat center;
+
+    --currentline: var(--mantle); /* or --surface0 */
+    --tridactyl-fg: var(--text);
+    --tridactyl-bg: var(--base);
+    --tridactyl-url-fg: var(--rosewater);
+    --tridactyl-url-bg: var(--base);
+    --tridactyl-highlight-box-bg: var(--mantle);
+    --tridactyl-highlight-box-fg: var(--text);
+    --tridactyl-of-fg: var(--text);
+    --tridactyl-of-bg: var(--mantle);
+
+    /* Command Line Specific */
+    --tridactyl-cmdl-fg: var(--text);
+    --tridactyl-cmdl-bg: var(--base);
+
+    /* Hint character tags */
+    --tridactyl-hintspan-fg: var(--base) !important;
+    --tridactyl-hintspan-bg: var(--green) !important;
+
+    /* Element Highlights (using "none") */
+    /*
+    --tridactyl-hint-active-fg: none;
+    --tridactyl-hint-active-bg: none;
+    --tridactyl-hint-active-outline: none;
+    --tridactyl-hint-bg: none;
+    --tridactyl-hint-outline: none;
+    */
+
+    /* Element Colors */
+    --tridactyl-border: var(--lavender);
+    --tridactyl-completions-title: var(--blue);
+    --tridactyl-completions-title-focused: var(--pink);
+    --tridactyl-completions-url: var(--green);
+    --tridactyl-completions-header: var(--peach);
+}
+
+#command-line-holder {
+    border: 2px solid var(--tridactyl-border);
+    background: var(--tridactyl-bg);
+}
+
+#tridactyl-input {
+    color: var(--tridactyl-fg);
+    background: var(--tridactyl-bg);
+}
+
+#completions table {
+}
+
+#completions > div {
+}
+
+/* COMPLETIONS */
+
+#completions {
+    color: var(--tridactyl-fg);
+    background: var(--tridactyl-bg);
+}
+
+/* Olie doesn't know how CSS inheritance works */
+#completions .HistoryCompletionSource {
+}
+
+#completions .HistoryCompletionSource table {
+}
+
+/* redundancy 2: redundancy 2: more redundancy */
+#completions .BmarkCompletionSource {
+}
+
+#completions table tr td.prefix,#completions table tr td.privatewindow,#completions table tr td.container,#completions table tr td.icon {
+}
+
+#completions .BufferCompletionSource table {
+}
+
+#completions table tr.BufferCompletionOption {
+}
+#completions table tr.BufferCompletionOption td.content {
+}
+
+#completions table tr .title, #completions table tr td.excmd {
+    color: var(--tridactyl-completions-title);
+
+}
+
+#completions table tr .content, #completions table tr td.documentation {
+}
+#completions table tr.ExcmdCompletionOption .documentation {
+}
+
+#completions table tr {
+}
+
+#completions table tr td {
+}
+
+#completions .sectionHeader {
+    color: var(--tridactyl-completions-header);
+}
+
+#cmdline_iframe {
+}
+
+.TridactylStatusIndicator {
+    background: var(--tridactyl-bg) !important;
+    border: 1px var(--mauve) solid !important;
+}
+
+#completions .focused {
+    background: var(--currentline);
+    /* color: var(--blue); */
+    font-weight: bold;
+}
+#completions .focused td.title, #completions .focused td.excmd {
+  color: var(--tridactyl-completions-title-focused);
+}
+
+#completions .focused .url, #completions .focused td.documentation, #completions .focused td.content {
+    background: var(--currentline);
+    color: var(--tridactyl-completions-url);
 }
