@@ -96,32 +96,16 @@
     --tridactyl-cmplt-fg: var(--tridactyl-fg);
     --tridactyl-cmplt-bg: var(--tridactyl-bg);
     --tridactyl-cmplt-font-size: calc(var(--tridactyl-font-size) * 9 / 12);
-    --tridactyl-cmplt-font-family: monospace;
-    /* i don't think 0.5px is redered */
     --tridactyl-cmplt-border-top: 1px solid var(--overlay0);
-
-    /* need a better way for naming variables
-     *
-        - .Properties for .HistoryCompletionSource table
-        - .Properties for .BmarkCompletionSource table
-
-    */
 
     /*sectionHeader*/
 
     --tridactyl-header-first-bg: var(--surface0);
     --tridactyl-header-second-bg: var(--surface1);
     --tridactyl-header-third-bg: var(--surface2);
-    /* eg. What if I dont want liner-gradient as bg?
-     *
-     * :root .sectionHeader { background: blue; }
-     *
-     * ????
-     */
 
     --tridactyl-header-font-size: inherit;
     --tridactyl-header-font-weight: bold;
-    /* i don't think 0.5px is redered */
     --tridactyl-header-border-bottom: 1px solid var(--overlay0);
 
     /*url style*/
@@ -202,7 +186,7 @@
 }
 
 #command-line-holder {
-    border: 2px solid var(--tridactyl-border);
+    border-top: 1px solid var(--tridactyl-border);
     background: var(--tridactyl-bg);
 }
 
@@ -224,14 +208,12 @@
     background: var(--tridactyl-bg);
 }
 
-/* Olie doesn't know how CSS inheritance works */
 #completions .HistoryCompletionSource {
 }
 
 #completions .HistoryCompletionSource table {
 }
 
-/* redundancy 2: redundancy 2: more redundancy */
 #completions .BmarkCompletionSource {
 }
 
@@ -271,12 +253,11 @@
 
 .TridactylStatusIndicator {
     background: var(--tridactyl-bg) !important;
-    border: 1px var(--mauve) solid !important;
+    border: 1px var(--lavender) solid !important;
 }
 
 #completions .focused {
     background: var(--currentline);
-    /* color: var(--blue); */
     font-weight: bold;
 }
 #completions .focused td.title, #completions .focused td.excmd {
