@@ -1,0 +1,489 @@
+:root {
+    /* Core Backgrounds */
+    --base: #1e1e2e;
+    --mantle: #181825;
+    --crust: #11111b;
+
+    /* Text Colors */
+    --text: #cdd6f4;
+    --subtext0: #a6adc8;
+    --subtext1: #bac2de;
+
+    /* Surface Colors */
+    --surface0: #313244;
+    --surface1: #45475a;
+    --surface2: #585b70;
+
+    /* Overlay Colors */
+    --overlay0: #6c7086;
+    --overlay1: #7f849c;
+    --overlay2: #9399b2;
+
+    /* Accent Colors */
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --sapphire: #74c7ec;
+    --sky: #89dceb;
+    --teal: #94e2d5;
+    --green: #a6e3a1;
+    --yellow: #f9e2af;
+    --peach: #fab387;
+    --maroon: #eba0ac;
+    --red: #f38ba8;
+    --mauve: #cba6f7;
+    --pink: #f5c2e7;
+    --flamingo: #f2cdcd;
+    --rosewater: #f5e0dc;
+
+    --font: "Monaspace Argon";
+
+    --tridactyl-cmdl-font-family: var(--font);
+    --tridactyl-cmplt-font-family: var(--font);
+    --tridactyl-hintspan-font-family: var(--font);
+
+    /* {{{ photon-colours */
+
+    /* From https://github.com/overdodactyl/ShadowFox/blob/7dbe9343da87bde804e8fb88dd3b5eaaeb4817b2/css/common-files/color_variables.css */
+    --tridactyl-photon-colours-magenta-50: var(--pink);
+    --tridactyl-photon-colours-magenta-60: color-mix(
+        in srgb,
+        var(--pink) 85%,
+        black
+    );
+    --tridactyl-photon-colours-magenta-70: color-mix(
+        in srgb,
+        var(--pink) 65%,
+        black
+    );
+    --tridactyl-photon-colours-magenta-80: color-mix(
+        in srgb,
+        var(--pink) 45%,
+        black
+    );
+    --tridactyl-photon-colours-magenta-90: color-mix(
+        in srgb,
+        var(--pink) 25%,
+        black
+    );
+    --tridactyl-photon-colours-purple-50: var(--mauve);
+    --tridactyl-photon-colours-purple-60: color-mix(
+        in srgb,
+        var(--mauve) 85%,
+        black
+    );
+    --tridactyl-photon-colours-purple-70: color-mix(
+        in srgb,
+        var(--mauve) 65%,
+        black
+    );
+    --tridactyl-photon-colours-purple-80: color-mix(
+        in srgb,
+        var(--mauve) 45%,
+        black
+    );
+    --tridactyl-photon-colours-purple-90: color-mix(
+        in srgb,
+        var(--mauve) 25%,
+        black
+    );
+    --tridactyl-photon-colours-blue-40: color-mix(
+        in srgb,
+        var(--blue) 120%,
+        white
+    );
+    --tridactyl-photon-colours-blue-50: var(--blue);
+    --tridactyl-photon-colours-blue-60: color-mix(
+        in srgb,
+        var(--blue) 85%,
+        black
+    );
+    --tridactyl-photon-colours-blue-70: color-mix(
+        in srgb,
+        var(--blue) 65%,
+        black
+    );
+    --tridactyl-photon-colours-blue-80: color-mix(
+        in srgb,
+        var(--blue) 45%,
+        black
+    );
+    --tridactyl-photon-colours-blue-90: color-mix(
+        in srgb,
+        var(--blue) 25%,
+        black
+    );
+    --tridactyl-photon-colours-teal-50: var(--teal);
+    --tridactyl-photon-colours-teal-60: color-mix(
+        in srgb,
+        var(--teal) 85%,
+        black
+    );
+    --tridactyl-photon-colours-teal-70: color-mix(
+        in srgb,
+        var(--teal) 65%,
+        black
+    );
+    --tridactyl-photon-colours-teal-80: color-mix(
+        in srgb,
+        var(--teal) 45%,
+        black
+    );
+    --tridactyl-photon-colours-teal-90: color-mix(
+        in srgb,
+        var(--teal) 25%,
+        black
+    );
+    --tridactyl-photon-colours-green-50: var(--green);
+    --tridactyl-photon-colours-green-60: color-mix(
+        in srgb,
+        var(--green) 85%,
+        black
+    );
+    --tridactyl-photon-colours-green-70: color-mix(
+        in srgb,
+        var(--green) 65%,
+        black
+    );
+    --tridactyl-photon-colours-green-80: color-mix(
+        in srgb,
+        var(--green) 45%,
+        black
+    );
+    --tridactyl-photon-colours-green-90: color-mix(
+        in srgb,
+        var(--green) 25%,
+        black
+    );
+    --tridactyl-photon-colours-yellow-50: var(--yellow);
+    --tridactyl-photon-colours-yellow-60: color-mix(
+        in srgb,
+        var(--yellow) 85%,
+        black
+    );
+    --tridactyl-photon-colours-yellow-70: color-mix(
+        in srgb,
+        var(--yellow) 65%,
+        black
+    );
+    --tridactyl-photon-colours-yellow-80: color-mix(
+        in srgb,
+        var(--yellow) 45%,
+        black
+    );
+    --tridactyl-photon-colours-yellow-90: color-mix(
+        in srgb,
+        var(--yellow) 25%,
+        black
+    );
+    --tridactyl-photon-colours-red-50: var(--red);
+    --tridactyl-photon-colours-red-60: color-mix(
+        in srgb,
+        var(--red) 85%,
+        black
+    );
+    --tridactyl-photon-colours-red-70: color-mix(
+        in srgb,
+        var(--red) 65%,
+        black
+    );
+    --tridactyl-photon-colours-red-80: color-mix(
+        in srgb,
+        var(--red) 45%,
+        black
+    );
+    --tridactyl-photon-colours-red-90: color-mix(
+        in srgb,
+        var(--red) 25%,
+        black
+    );
+    --tridactyl-photon-colours-orange-50: var(--peach);
+    --tridactyl-photon-colours-orange-60: color-mix(
+        in srgb,
+        var(--peach) 85%,
+        black
+    );
+    --tridactyl-photon-colours-orange-70: color-mix(
+        in srgb,
+        var(--peach) 65%,
+        black
+    );
+    --tridactyl-photon-colours-orange-80: color-mix(
+        in srgb,
+        var(--peach) 45%,
+        black
+    );
+    --tridactyl-photon-colours-orange-90: color-mix(
+        in srgb,
+        var(--peach) 25%,
+        black
+    );
+    --tridactyl-photon-colours-grey-10: var(--text);
+    --tridactyl-photon-colours-grey-20: var(--subtext1);
+    --tridactyl-photon-colours-grey-30: var(--subtext0);
+    --tridactyl-photon-colours-grey-40: var(--overlay2);
+    --tridactyl-photon-colours-grey-50: var(--overlay1);
+    --tridactyl-photon-colours-grey-60: var(--overlay0);
+    --tridactyl-photon-colours-grey-70: var(--surface2);
+    --tridactyl-photon-colours-grey-80: var(--surface1);
+    --tridactyl-photon-colours-grey-90: var(--surface0);
+    --tridactyl-photon-colours-code-green: var(--green) !important;
+    --tridactyl-photon-colours-warning-color: var(--yellow);
+    --tridactyl-photon-colours-warning-background-color: color-mix(
+        in srgb,
+        var(--yellow) 20%,
+        var(--base)
+    );
+    --tridactyl-photon-colours-theme-highlight-green: var(--green);
+    --tridactyl-photon-colours-theme-highlight-blue: var(--blue);
+    --tridactyl-photon-colours-theme-highlight-purple: var(--mauve);
+    --tridactyl-photon-colours-theme-highlight-red: var(--pink);
+    --tridactyl-photon-colours-theme-highlight-yellow: var(--yellow);
+    --tridactyl-photon-colours-theme-highlight-bluegrey: color-mix(
+        in srgb,
+        var(--blue) 60%,
+        var(--overlay0)
+    );
+    --tridactyl-photon-colours-theme-highlight-lightorange: color-mix(
+        in srgb,
+        var(--peach) 80%,
+        var(--yellow)
+    );
+    --tridactyl-photon-colours-theme-highlight-orange: var(--peach);
+    --tridactyl-photon-colours-theme-highlight-pink: var(--pink);
+    --tridactyl-photon-colours-tone-1: var(--tridactyl-photon-colours-grey-10);
+    --tridactyl-photon-colours-tone-2: var(--tridactyl-photon-colours-grey-20);
+    --tridactyl-photon-colours-tone-3: var(--tridactyl-photon-colours-grey-30);
+    --tridactyl-photon-colours-tone-4: var(--tridactyl-photon-colours-grey-40);
+    --tridactyl-photon-colours-tone-5: var(--tridactyl-photon-colours-grey-50);
+    --tridactyl-photon-colours-tone-6: var(--tridactyl-photon-colours-grey-60);
+    --tridactyl-photon-colours-tone-7: var(--tridactyl-photon-colours-grey-70);
+    --tridactyl-photon-colours-tone-8: var(--tridactyl-photon-colours-grey-80);
+    --tridactyl-photon-colours-tone-9: var(--tridactyl-photon-colours-grey-90);
+    --tridactyl-photon-colours-accent-1: var(
+        --tridactyl-photon-colours-blue-40
+    );
+    --tridactyl-photon-colours-accent-2: var(
+        --tridactyl-photon-colours-blue-50
+    );
+    --tridactyl-photon-colours-accent-3: var(
+        --tridactyl-photon-colours-blue-60
+    );
+    --tridactyl-photon-colours-in-content-page-color: var(
+        --tridactyl-photon-colours-tone-4
+    ) !important;
+    --tridactyl-photon-colours-in-content-page-background: var(
+        --tridactyl-photon-colours-tone-7
+    ) !important;
+    --tridactyl-photon-colours-in-content-text-color: var(
+        --tridactyl-photon-colours-tone-3
+    ) !important;
+    --tridactyl-photon-colours-in-content-selected-text: var(
+        --tridactyl-photon-colours-tone-1
+    ) !important;
+    --tridactyl-photon-colours-in-content-box-background: var(
+        --tridactyl-photon-colours-tone-6
+    ) !important;
+    --tridactyl-photon-colours-in-content-box-background-odd: var(--surface0);
+    --tridactyl-photon-colours-in-content-box-background-hover: var(
+        --tridactyl-photon-colours-tone-6
+    ) !important;
+    --tridactyl-photon-colours-in-content-box-background-active: var(
+        --tridactyl-photon-colours-tone-6
+    ) !important;
+    --tridactyl-photon-colours-in-content-box-border-color: var(
+        --tridactyl-photon-colours-tone-5
+    ) !important;
+    --tridactyl-photon-colours-in-content-item-hover: color-mix(
+        in srgb,
+        var(--blue) 25%,
+        transparent
+    );
+    --tridactyl-photon-colours-in-content-item-selected: var(
+        --tridactyl-photon-colours-tone-8
+    ) !important;
+    --tridactyl-photon-colours-in-content-border-highlight: var(
+        --tridactyl-photon-colours-accent-1
+    ) !important;
+    --tridactyl-photon-colours-in-content-border-focus: var(
+        --tridactyl-photon-colours-accent-1
+    ) !important;
+    --tridactyl-photon-colours-in-content-border-color: var(
+        --tridactyl-photon-colours-tone-6
+    ) !important;
+    --tridactyl-photon-colours-in-content-category-outline-focus: 1px dotted
+        var(--blue);
+    --tridactyl-photon-colours-in-content-category-text: var(
+        --tridactyl-photon-colours-tone-4
+    ) !important;
+    --tridactyl-photon-colours-in-content-category-text-active: var(--surface0);
+    --tridactyl-photon-colours-in-content-category-text-selected: var(
+        --tridactyl-photon-colours-accent-1
+    ) !important;
+    --tridactyl-photon-colours-in-content-category-text-selected-active: color-mix(
+        in srgb,
+        var(--blue) 85%,
+        black
+    );
+    --tridactyl-photon-colours-in-content-category-background-hover: color-mix(
+        in srgb,
+        var(--surface0) 10%,
+        transparent
+    );
+    --tridactyl-photon-colours-in-content-category-background-active: color-mix(
+        in srgb,
+        var(--surface0) 15%,
+        transparent
+    );
+    --tridactyl-photon-colours-in-content-category-background-selected-hover: color-mix(
+        in srgb,
+        var(--surface0) 15%,
+        transparent
+    );
+    --tridactyl-photon-colours-in-content-category-background-selected-active: color-mix(
+        in srgb,
+        var(--surface0) 20%,
+        transparent
+    );
+    --tridactyl-photon-colours-in-content-tab-color: var(--overlay0);
+    --tridactyl-photon-colours-in-content-link-color: var(
+        --tridactyl-photon-colours-accent-1
+    ) !important;
+    --tridactyl-photon-colours-in-content-link-color-hover: var(
+        --tridactyl-photon-colours-accent-2
+    ) !important;
+    --tridactyl-photon-colours-in-content-link-color-active: color-mix(
+        in srgb,
+        var(--blue) 65%,
+        black
+    );
+    --tridactyl-photon-colours-in-content-link-color-visited: var(--mauve);
+    --tridactyl-photon-colours-in-content-primary-button-background: var(
+        --tridactyl-photon-colours-accent-2
+    ) !important;
+    --tridactyl-photon-colours-in-content-primary-button-background-hover: var(
+        --tridactyl-photon-colours-accent-3
+    ) !important;
+    --tridactyl-photon-colours-in-content-primary-button-background-active: var(
+        --tridactyl-photon-colours-accent-3
+    ) !important;
+    --tridactyl-photon-colours-in-content-table-border-dark-color: var(
+        --tridactyl-photon-colours-tone-7
+    ) !important;
+    --tridactyl-photon-colours-in-content-table-header-background: var(
+        --tridactyl-photon-colours-accent-2
+    ) !important;
+    --tridactyl-photon-colours-theme-selection-background: var(
+        --tridactyl-photon-colours-accent-2
+    ) !important;
+    --tridactyl-photon-colours-theme-selection-background-hover: var(
+        --tridactyl-photon-colours-accent-1
+    ) !important;
+    --tridactyl-photon-colours-in-content-category-header-background: var(
+        --tridactyl-photon-colours-tone-8
+    ) !important;
+    --tridactyl-photon-colours-selected-icon-fill-color: var(
+        --tridactyl-photon-colours-tone-2
+    ) !important;
+    --tridactyl-photon-colours-in-content-dark-header-background: var(
+        --tridactyl-photon-colours-tone-9
+    ) !important;
+    --tridactyl-photon-colours-secure-connection-color: var(
+        --tridactyl-photon-colours-accent-1
+    );
+    --tridactyl-photon-colours-theme-sidebar-background: var(
+        --mantle
+    ) !important;
+    --tridactyl-photon-colours-cm-background: var(
+        --tridactyl-photon-colours-tone-8
+    ) !important;
+    --tridactyl-photon-colours-cm-selection: var(--surface1) !important;
+    --tridactyl-photon-colours-cm-marker: var(--overlay0) !important;
+    --tridactyl-photon-colours-cm-linenumber: var(--overlay1) !important;
+    --tridactyl-photon-colours-cm-cursor: var(--text) !important;
+    --tridactyl-photon-colours-cm-active-line-background: color-mix(
+        in srgb,
+        var(--blue) 15%,
+        transparent
+    ) !important;
+    --tridactyl-photon-colours-cm-matching-bracket: color-mix(
+        in srgb,
+        var(--text) 25%,
+        transparent
+    ) !important;
+    --tridactyl-photon-colours-cm-search-background: var(--surface0) !important;
+    --tridactyl-photon-colours-cm-red: var(--red) !important;
+    --tridactyl-photon-colours-start-indicator-for-updater-scripts: var(--base);
+    --tridactyl-photon-colours-end-indicator-for-updater-scripts: var(--base);
+    --tridactyl-photon-colours-dummy-variable-for-updater-scripys: var(--base);
+
+    /* }}} */
+
+    /* 2021 firefox redesign changed the background color of a new tab.
+       this is a quick fix to remove flicker when opening a new about:blank tab with tridactyl installed.
+    */
+    --tridactyl-firefox-2021-redesign-background: var(--base);
+    --tridactyl-fg: var(--text);
+    --tridactyl-bg: var(--base);
+
+    --tridactyl-scrollbar-color: var(--surface1) var(--text);
+
+    --tridactyl-cmdl-fg: var(--text);
+    --tridactyl-cmdl-bg: var(--surface0);
+
+    /* --tridactyl-header-first-bg: var(--tridactyl-photon-colours-in-content-category-header-background); */
+    /* --tridactyl-header-second-bg: var(--tridactyl-photon-colours-in-content-category-header-background); */
+    /* --tridactyl-header-third-bg: var(--tridactyl-header-first-bg); */
+
+    --tridactyl-header-first-bg: var(--surface1);
+    --tridactyl-header-second-bg: var(--surface0);
+    --tridactyl-header-third-bg: var(--mantle);
+
+    --tridactyl-cmplt-border-top: 1px solid var(--overlay0);
+
+    --tridactyl-url-fg: var(--green);
+    --tridactyl-url-bg: var(--base);
+
+    --tridactyl-of-fg: var(--yellow);
+    --tridactyl-of-bg: color-mix(in srgb, var(--yellow) 20%, var(--base));
+
+    /* Hints are not photon coloured. Feel free to experiment with that */
+
+    --tridactyl-hintspan-fg: var(--base);
+    --tridactyl-hintspan-bg: var(--blue);
+
+    --tridactyl-hint-active-fg: var(--base);
+    --tridactyl-hint-active-bg: var(--green);
+    --tridactyl-hint-active-outline: 1px solid var(--red);
+
+    --tridactyl-hint-bg: color-mix(in srgb, var(--blue) 25%, transparent);
+    --tridactyl-hint-outline: 1px solid var(--blue);
+
+    --tridactyl-highlight-box-bg: var(--surface1);
+    --tridactyl-highlight-box-fg: var(--text);
+}
+
+:root.TridactylOwnNamespace input[id^="spoiler"] ~ .spoiler {
+    border-color: var(--tridactyl-photon-colours-in-content-box-border-color);
+}
+
+:root.TridactylOwnNamespace {
+    scrollbar-color: var(--tridactyl-scrollbar-color);
+    scrollbar-width: thin;
+}
+
+:root.TridactylOwnNamespace a {
+    color: var(--blue);
+}
+
+/* These rules have greater specificity than the rules applying the variables
+ * above, which causes *issues*. */
+
+/* :root.TridactylOwnNamespace */
+/* a:link { */
+/*     color: var(--tridactyl-photon-colours-in-content-link-color); */
+/* } */
+
+/* :root.TridactylOwnNamespace */
+/* a:link:visited { */
+/*     --tridactyl-photon-colours-in-content-link-color-visited: #0a8dff; */
+/* } */
